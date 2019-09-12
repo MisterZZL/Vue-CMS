@@ -42,6 +42,7 @@
             <img src="../assets/menu6.png" alt />
             <div class="mui-media-body">联系我们</div>
           </router-link>
+          <router-view></router-view>
         </li>
       </ul>
     </div>

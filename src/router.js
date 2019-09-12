@@ -8,8 +8,12 @@ export default new Router({
   // base: 'vuecms',
   routes: [
     { path: '/', redirect: '/home'},
-    { path: '/home', name: 'home',component: () => import('./views/Home.vue')},
-    { path: '/home/newslist', name: "newslist", component: () => import('./components/news/NewsList.vue')}, 
+    { path: '/home', name: 'home',component: () => import('./views/Home.vue'),
+      children:[{path: 'newslist', name: "newslist", component: () => import('./components/news/NewsList.vue')}]
+  },
+
+
+    // { path: '/home/newslist', name: "newslist", component: () => import('./components/news/NewsList.vue')}, 
     { path: '/home/photolist', name: "photolist", component: () => import('./components/photos/PhotoList.vue')},
     { path: '/home/goodslist', name: "goodslist", component: () => import('./components/goods/GoodsList.vue')},
     { path: '/member', name: 'member', component: () => import('./views/Member.vue')},    
