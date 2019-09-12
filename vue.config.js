@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: '/vuecms',
+    // publicPath: '/vuecms',
     devServer: {
         proxy: {
             "/api": {

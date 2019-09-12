@@ -8,9 +8,12 @@ import '../public/css/mui/css/mui.min.css'
 // 导入扩展图标样式
 import '../public/css/mui/css/icons-extra.css'
 
+// 导入 MintUI 的样式
 import MintUI from 'mint-ui'
 Vue.use(MintUI)
 import 'mint-ui/lib/style.css'
+
+
 
 Vue.config.productionTip = false
 
